@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Hello, Welcome!</h1>
+    <div class="container" id="page1">
+        <h1>MULAH</h1>
+        <h2>Hello, </h2>
+        <h2> Welcome!</h2>
         <h3>Check Your Loyalty Points and Rewards</h3>
-        <input type="tel" id="phoneNumber" placeholder="+60173527250" pattern="\+60173527250">
+        <div class="input-group">
+            <select id="countryCode">
+                <option value="+60">+60</option>
+                <!-- Add other country codes as needed -->
+            </select>
+            <input type="tel" id="phoneNumber" placeholder="Enter your mobile number">
+        </div>
         <button id="checkPoints">Check Loyalty Points</button>
     </div>
     <script src="script.js"></script>

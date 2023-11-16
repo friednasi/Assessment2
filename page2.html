@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULAH - Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="page2">
+        <h1>MULAH</h1>
+        <h2>Registration</h2>
+        <h3 style="font-style: italic;">Please fill up your details</h3>
+
+        <h3>Name</h3>
+        <input type="text" id="name" placeholder="Enter Name">
+        <h4 class="error-message">*Please insert a name</h4>
+
+        <h3>Birthday</h3>
+        <div class="date-inputs">
+            <input type="number" id="day" placeholder="DD" min="1" max="31">
+            <input type="number" id="month" placeholder="MM" min="1" max="12">
+            <input type="number" id="year" placeholder="YYYY" min="1900" max="2023">
+        </div>
+        <h4 class="error-message">*Please insert your birthday</h4>
+
+        <h3>Email</h3>
+        <input type="email" id="email" placeholder="Email Address">
+        <h4 class="error-message">*Please insert a valid email address</h4>
+        <label>
+            <input type="checkbox" id="noEmail"> No email address
+        </label>
+
+        <button id="continueButton">Continue</button>
+    </div>
+    <script src="page2_script.js"></script>
+</body>
+</html>
