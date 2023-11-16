@@ -10,7 +10,7 @@
     <div class="container" id="page2">
         <h1>MULAH</h1>
         <h2>Registration</h2>
-        <h3 style="font-style: italic;">Please fill up your details</h3>
+        <h4 style="font-style: italic;">Please fill up your details</h4>
 
         <h3>Name</h3>
         <input type="text" id="name" placeholder="Enter Name">
@@ -27,11 +27,12 @@
         <h3>Email</h3>
         <input type="email" id="email" placeholder="Email Address">
         <h4 class="error-message">*Please insert a valid email address</h4>
-        <label>
-            <input type="checkbox" id="noEmail"> No email address
-        </label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="noEmail">
+            <label for="noEmail">No email address</label>
+        </div>
 
-        <button id="continueButton">Continue</button>
+        <button id="continueButton" class="centered-button">Continue</button>
     </div>
     <script src="page2_script.js"></script>
 </body>

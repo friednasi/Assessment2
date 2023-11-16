@@ -15,7 +15,7 @@ body, html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1{ 
+h1 { 
     color: orangered;
 }
 h2, h3, h4 {
@@ -46,7 +46,15 @@ button:hover {
     text-align: center;
 }
 
-#page1 h2, #page1 h3, #page1 .input-group, #page1 select, #page1 input[type="tel"] {
+#page1 h4 {
+    color: orangered; /* Change h4 color to orange */
+}
+
+#page1 h2 {
+    font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
+}
+
+#page1 h2, #page1 h4, #page1 .input-group, #page1 select, #page1 input[type="tel"] {
     text-align: left;
     width: 100%;
     box-sizing: border-box;
@@ -57,8 +65,13 @@ button:hover {
     justify-content: flex-start;
 }
 
-#page1 select, #page1 input[type="tel"] {
+#page1 select {
+    width: 70px; /* Smaller width for country code selector */
     margin-right: 10px;
+}
+
+#page1 input[type="tel"] {
+    flex-grow: 1; /* Allows the phone number input to take up remaining space */
 }
 
 #page1 button {
@@ -72,6 +85,9 @@ button:hover {
     text-align: center;
 }
 
+#page2 h2 {
+    font-family: 'Times New Roman', Times, serif; /* Set font to Times New Roman */
+}
 #page2 h2, #page2 h3, #page2 h4, #page2 input, #page2 button, #page2 label {
     text-align: left;
     width: 100%;
@@ -95,14 +111,27 @@ button:hover {
     display: inline-block;
 }
 
-#page2 input[type="text"], #page2 input[type="number"], #page2 input[type="email"] {
+#page2 input[type="text"], #page2 input[type="number"], #page2 input[type="email"], #page2 input[type="checkbox"] {
     background-color: #f9f9f9;
     margin: 5px 0;
 }
 
-#page2 label {
-    display: block;
+/* Corrected Checkbox Styles */
+#page2 .checkbox-group {
+    display: flex;
+    align-items: center;
     margin-top: 10px;
+}
+
+#page2 input[type="checkbox"] {
+    margin-right:10 px;
+}
+
+/* Centered "Continue" Button */
+#page2 .centered-button {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
 }
 
 /* Page 3 Specific Styles */
